@@ -1,0 +1,9 @@
+[package]
+name = "jlrs_mountain_car"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+jlrs = { git = "https://github.com/Taaitaaiger/jlrs", rev = "e1b86b1", features = ["full", "julia-1-10"] }
+tokio = { version = "1", features = ["macros", "rt"]}
+async-trait = { version = "0.1", optional = true }
