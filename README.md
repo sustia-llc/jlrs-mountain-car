@@ -4,9 +4,16 @@ This project creates a simple Rust gateway to interact with the RxInfer example 
 
 ## Prerequisites
 
-1. Rust: Make sure you have Rust installed on your system. If not, you can install it from [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
+1. Rust: Make sure you have Rust installed on your system. You can install it from [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install).
 
-2. Julia: Ensure Julia is installed on your system. You can download it from [https://julialang.org/downloads/](https://julialang.org/downloads/).
+2. Julia: Ensure Julia 1.10.5 is installed on your system. You will need to download the full archive from [https://julialang.org/downloads/](https://julialang.org/downloads/) and extract and deploy per [jlrs](https://github.com/Taaitaaiger/jlrs) requirements:
+   - linux:  extract archive to $HOME and add these commands to .bashrc:
+   ```
+   export JULIA_DIR="$HOME/julia-1.10.5"
+   export PATH="$JULIA_DIR/bin:$PATH"
+   export LD_LIBRARY_PATH=$JULIA_DIR/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+   ```
+
 3. Clone this repository:
    ```
    git clone https://github.com/your-username/jlrs-mountain-car.git
